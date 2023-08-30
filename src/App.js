@@ -7,6 +7,7 @@ import TodoForm from './components/TodoForm';
 import PostList from './components/PostList';
 import Pagination from './components/Pagination';
 import Clock from './components/Clock';
+import Magicbox from './components/MagicBox/Magicbox';
 
 function App() {
   const [todoList, setTodoList] = useState(
@@ -91,13 +92,15 @@ function App() {
       {/* <TodoForm onSubmit={handleTodoFormSubmit} />
       <TodoList todos={todoList} onTodoClick={handleTodoClick} /> */}
 
-      {stop && < Clock />}
+      {/* {stop && < Clock />}
       <button onClick={() => setStop(false)}>
         Stop Clock
       </button>
       <button onClick={() => setStop(true)}>
         show Clock
-      </button>
+      </button> */}
+
+      <Magicbox />
     </div>
   );
 }
